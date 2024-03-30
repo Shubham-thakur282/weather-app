@@ -21,6 +21,7 @@ const App = ()=>{
         e.preventDefault();
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
+        
         axios.get(url)
         .then((response)=>{
             // console.log(response);
