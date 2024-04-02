@@ -16,8 +16,6 @@ const App = ()=>{
         const newValue = e.target.value;
         setCity(newValue);
     }
-    
-
     const handleSubmit = (e)=>{
         e.preventDefault();
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
