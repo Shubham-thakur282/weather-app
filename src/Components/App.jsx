@@ -15,6 +15,7 @@ const App = ()=>{
     const handleChange = (e)=>{
         const newValue = e.target.value;
         setCity(newValue);
+        
     }
     const handleSubmit = (e)=>{
         e.preventDefault();
