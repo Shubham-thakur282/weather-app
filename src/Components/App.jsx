@@ -125,7 +125,7 @@ const App = () => {
       ],
     },
   };
-
+  
   return (
     <div style={{ maxWidth: "800px", margin: "auto", paddingTop: "50px" }}>
       <Search
