@@ -4,7 +4,7 @@ import { Spin, Card, Row, Col } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { Bar } from "react-chartjs-2";
 import { Input } from "antd";
-import {CategoryScale} from 'chart.js'; 
+import { CategoryScale } from 'chart.js';
 import Chart from 'chart.js/auto';
 Chart.register(CategoryScale);
 
@@ -64,7 +64,7 @@ const App = () => {
       .then((response) => {
         const forecastData = response.data.list;
         console.log(forecastData);
-        const nextFiveDays = forecastData.slice(0, 40   ).map((item) => ({
+        const nextFiveDays = forecastData.slice(0, 40).map((item) => ({
           date: item.dt_txt,
           temperature: item.main.temp,
         }));
@@ -125,7 +125,7 @@ const App = () => {
       ],
     },
   };
-  
+
   return (
     <div style={{ maxWidth: "800px", margin: "auto", paddingTop: "50px" }}>
       <Search
@@ -177,6 +177,7 @@ const App = () => {
           <Bar data={temperatureHistoryChart} options={options} />
         </div>
       )}
+      
     </div>
   );
 };
