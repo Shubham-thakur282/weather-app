@@ -177,7 +177,6 @@ const App = () => {
           <Bar data={temperatureHistoryChart} options={options} />
         </div>
       )}
-      
     </div>
   );
 };
