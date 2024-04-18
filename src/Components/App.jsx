@@ -173,6 +173,7 @@ const App = () => {
               </Col>
             ))}
           </Row>
+          
           <h2>Temperature History for Past 5 Days</h2>
           <Bar data={temperatureHistoryChart} options={options} />
         </div>
